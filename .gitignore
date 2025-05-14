@@ -1,0 +1,69 @@
+# ===================
+# Node.js Standard
+# ===================
+
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================
+# Environment & Config
+# ===================
+
+# Dotenv environment variables
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+log.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ===================
+# Editor-specific
+# ===================
+
+# VSCode
+.vscode/
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+
+# ===================
+# Build / Deployment
+# ===================
+
+# Runtime files
+dist/
+build/
+temp/
+tmp/
+
+# Local environment
+.koyeb/
+.vercel/
+.cache/
+
+# ===================
+# Optional Git exclusions
+# ===================
+
+# Optional: ignore tests (if separate)
+# /tests/
+
+# Optional: ignore coverage reports (Jest, etc)
+coverage/
+
+# Optional: ignore uploads directory (if storing local files)
+# uploads/
+
+# Ignore lock file (only if using yarn or pnpm)
+# yarn.lock
+# pnpm-lock.yaml
