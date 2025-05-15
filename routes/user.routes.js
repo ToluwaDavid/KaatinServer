@@ -18,4 +18,8 @@ router.get("/card/:id", async (req, res) => {
   });
 });
 
+router.get("/home", (req, res) => {
+  res.send("Welcome to Kadd backednd");
+});
+
 module.exports = router;
