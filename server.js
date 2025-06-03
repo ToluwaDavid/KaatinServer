@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(cookieParser());
 
-const allowedOrigins = [process.env.DEV_URL, process.env.CLIENT_URL];
+const allowedOrigins = [process.env.DEV_URL, process.env.CLIENT_URL, https://kaatin.vercel.app/];
 //Setting up CORS
 app.use(
   cors({
