@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const cookieparser = require("cookie-parser");
+const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 // const routes = require("./routes");
@@ -12,10 +12,20 @@ connectDB();
 
 app.use(express.json());
 
+app.use(cookieParser());
+
+const allowedOrigins = [process.env.DEV_URL, process.env.CLIENT_URL];
 //Setting up CORS
 app.use(
   cors({
-    origin: process.env.DEV_URL,
+    //origin: process.env.DEV_URL,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS not allowed"));
+      }
+    },
     credentials: true,
   })
 );
