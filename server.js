@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json());
 
 app.use(cookieParser());
-CLIENT_URL = https://kaatin.vercel.app/
+CLIENT_URL = "https://kaatin.vercel.app/"
 const allowedOrigins = [process.env.DEV_URL, process.env.CLIENT_URL, CLIENT_URL];
 //Setting up CORS
 app.use(
