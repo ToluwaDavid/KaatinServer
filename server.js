@@ -17,7 +17,7 @@ app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",                 // Local dev
   "http://localhost:3000",                 // Local dev (alternate port)
-  "https://kaatin.vercel.app/",      // Vercel or similar
+  "https://kaatin.vercel.app",      // Vercel or similar
   "https://your-app-client.up.railway.app" // Replace with actual domain
 ];
 
